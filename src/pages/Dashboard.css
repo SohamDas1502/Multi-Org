@@ -1,0 +1,266 @@
+.dashboard-container {
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+.dashboard-nav {
+  background: #fff;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #000;
+  box-shadow: none;
+}
+
+.dashboard-nav h2 {
+  color: #000;
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.btn-logout {
+  padding: 10px 24px;
+  background: #000;
+  color: white;
+  border: 2px solid #000;
+  border-radius: 0;
+  font-weight: 600;
+  cursor: pointer;
+  transition: none;
+}
+
+.btn-logout:hover {
+  background: white;
+  color: #000;
+  transform: none;
+}
+
+.dashboard-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.welcome-section {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #000;
+}
+
+.welcome-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  opacity: 1;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.info-card {
+  background: white;
+  border: 2px solid #000;
+  border-radius: 0;
+  padding: 28px;
+  box-shadow: none;
+  transition: none;
+}
+
+.info-card:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.info-card.highlight {
+  background: #000;
+  color: white;
+}
+
+.info-card.highlight h3,
+.info-card.highlight .info-label {
+  color: white;
+}
+
+.info-card.highlight .info-value {
+  color: white;
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+.info-card h3 {
+  color: #000;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.info-item {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #000;
+}
+
+.info-card.highlight .info-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.info-label {
+  font-weight: 600;
+  color: #000;
+  font-size: 0.9rem;
+}
+
+.info-value {
+  color: #000;
+  font-size: 0.9rem;
+  text-align: right;
+  max-width: 60%;
+  word-break: break-word;
+}
+
+.info-value.code {
+  font-family: 'Courier New', monospace;
+  font-size: 0.8rem;
+  background: #f0f0f0;
+  padding: 4px 8px;
+  border-radius: 0;
+  border: 1px solid #000;
+}
+
+.info-card.highlight .info-value.code {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid white;
+}
+
+.user-avatar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 0;
+  border: 2px solid #000;
+}
+
+.org-badge {
+  margin-top: 16px;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid white;
+  border-radius: 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.no-org-message {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
+  border-radius: 0;
+}
+
+.no-org-message p {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.no-org-message small {
+  opacity: 0.8;
+}
+
+.token-section {
+  background: white;
+  border: 2px solid #000;
+  border-radius: 0;
+  padding: 28px;
+  margin-bottom: 40px;
+  box-shadow: none;
+}
+
+.token-section h3 {
+  color: #000;
+  margin-bottom: 16px;
+}
+
+.token-content {
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 0;
+  padding: 16px;
+  overflow-x: auto;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.token-content pre {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #000;
+  font-family: 'Courier New', monospace;
+}
+
+.features-section {
+  background: white;
+  border: 2px solid #000;
+  border-radius: 0;
+  padding: 28px;
+  box-shadow: none;
+}
+
+.features-section h3 {
+  color: #000;
+  margin-bottom: 24px;
+  font-size: 1.3rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.feature-card {
+  padding: 20px;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 0;
+  transition: none;
+}
+
+.feature-card:hover {
+  transform: none;
+  background: #000;
+  color: white;
+}
+
+.feature-card h4 {
+  color: #000;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.feature-card:hover h4 {
+  color: white;
+}
+
+.feature-card p {
+  color: #000;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.feature-card:hover p {
+  color: white;
+}
